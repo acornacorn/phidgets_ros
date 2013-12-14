@@ -26,14 +26,12 @@ add_service_files(
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
-   geometry_msgs
    std_msgs
  )
 
 catkin_package(
     INCLUDE_DIRS include
     LIBRARIES phidets 
-    CATKIN_DEPENDS geometry_msgs 
 )
 include_directories(include 
                     ${catkin_INCLUDE_DIRS} 
