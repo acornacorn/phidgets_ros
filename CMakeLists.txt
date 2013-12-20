@@ -30,10 +30,9 @@ add_service_files(
  )
 
 catkin_package(
-    INCLUDE_DIRS include
     LIBRARIES phidets 
 )
-include_directories(include 
+include_directories(include
                     ${catkin_INCLUDE_DIRS} 
                     )
 
