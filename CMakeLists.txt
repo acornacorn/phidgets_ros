@@ -30,7 +30,8 @@ add_service_files(
  )
 
 catkin_package(
-    LIBRARIES phidets 
+	INCLUDE_DIRS include
+    LIBRARIES phidgets 
 )
 include_directories(include
                     ${catkin_INCLUDE_DIRS} 
@@ -44,3 +45,4 @@ add_subdirectory(src)
 install(DIRECTORY include/ DESTINATION include)
 
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+install(DIRECTORY config DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
